@@ -251,3 +251,12 @@ g8Jnx5PIr5hLY4qCMOY2ItdP5n+Kne9WwZaQETULVUV+m2X+aC/i
 | member           | cn=Turanga Leela,ou=people,dc=planetexpress,dc=com |
 | member           | cn=Philip J. Fry,ou=people,dc=planetexpress,dc=com |
 | member           | cn=Bender Bending Rodríguez,ou=people,dc=planetexpress,dc=com |
+
+### cn=git,ou=people,dc=planetexpress,dc=com
+
+| Attribute        | Value            |
+| ---------------- | ---------------- |
+| objectClass      | Group |
+| cn               | git |
+| member           | cn=admin_staff,ou=people,dc=planetexpress,dc=com |
+| member           | cn=ship_crew,ou=people,dc=planetexpress,dc=com |
