@@ -1,0 +1,38 @@
+workspace:
+  base: /srv/app
+  path: src
+
+clone:
+  git:
+    image: plugins/git:1
+    depth: 50
+    tags: true
+
+pipeline:
+  docker:
+    image: plugins/docker:17.05
+    pull: true
+    secrets: [ docker_username, docker_password ]
+    repo: gitea/test-openldap
+    tags: [ '${DRONE_BRANCH##release/v}' ]
+    when:
+      event: [ push ]
+      branch: [ release/* ]
+
+  docker:
+    image: plugins/docker:17.05
+    pull: true
+    secrets: [ docker_username, docker_password ]
+    repo: gitea/test-openldap
+    tags: [ 'latest' ]
+    when:
+      event: [ push ]
+      branch: [ master ]
+
+  discord:
+    image: appleboy/drone-discord:1.0.0
+    pull: true
+    secrets: [ discord_webhook_id, discord_webhook_token ]
+    when:
+      event: [ push, tag, pull_request ]
+      status: [ changed, failure ]

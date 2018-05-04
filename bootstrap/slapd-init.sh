@@ -66,6 +66,11 @@ configure_msad_features(){
   ldapmodify -Y EXTERNAL -H ldapi:/// -f ${CONFIG_DIR}/msad.ldif -Q
 }
 
+configure_ssh_features(){
+  echo "Configure SSH Extensions"
+  ldapadd -Y EXTERNAL -H ldapi:/// -f ${CONFIG_DIR}/openssh_lpk.ldif -Q
+}
+
 load_initial_data() {
     echo "Load data..."
     local data=$(find ${DATA_DIR} -maxdepth 1 -name \*_\*.ldif -type f | sort)
@@ -87,6 +92,7 @@ chown -R openldap:openldap /etc/ldap
 slapd -h "ldapi:///" -u openldap -g openldap
 
 configure_msad_features
+configure_ssh_features
 configure_tls
 configure_logging
 load_initial_data
