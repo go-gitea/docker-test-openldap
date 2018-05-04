@@ -50,6 +50,18 @@ docker run --privileged -d -p 389:389 gitea/test-openldap
 | ---------------- | ---------------- |
 | cn=admin,dc=planetexpress,dc=com | GoodNewsEveryone |
 
+### ou=service,dc=planetexpress,dc=com
+
+#### uid=gitea,ou=service,dc=planetexpress,dc=com
+
+| Attribute        | Value            |
+| ---------------- | ---------------- |
+| objectClass      | account |
+| description      | Service account for integration with Gitea |
+| mail             | git@planetexpress.com |
+| uid              | gitea |
+| userPassword     | password |
+
 ### ou=people,dc=planetexpress,dc=com
 
 #### cn=Hubert J. Farnsworth,ou=people,dc=planetexpress,dc=com
