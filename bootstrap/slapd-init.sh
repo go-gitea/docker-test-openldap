@@ -71,6 +71,13 @@ configure_ssh_features(){
   ldapadd -Y EXTERNAL -H ldapi:/// -f ${CONFIG_DIR}/openssh_lpk.ldif -Q
 }
 
+configure_memberof_features(){
+  echo "Configure MemberOf Extensions"
+  ldapadd -Y EXTERNAL -H ldapi:/// -f ${CONFIG_DIR}/memberof_config.ldif -Q
+  ldapmodify -Y EXTERNAL -H ldapi:/// -f ${CONFIG_DIR}/refint1.ldif -Q
+  ldapadd -Y EXTERNAL -H ldapi:/// -f ${CONFIG_DIR}/refint2.ldif -Q
+}
+
 load_initial_data() {
     echo "Load data..."
     local data=$(find ${DATA_DIR} -maxdepth 1 -name \*_\*.ldif -type f | sort)
@@ -93,6 +100,7 @@ slapd -h "ldapi:///" -u openldap -g openldap
 
 configure_msad_features
 configure_ssh_features
+configure_memberof_features
 configure_tls
 configure_logging
 load_initial_data
