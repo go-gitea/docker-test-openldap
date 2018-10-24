@@ -138,6 +138,7 @@ docker run --privileged -d -p 389:389 gitea/test-openldap
 | userPassword     | hermes |
 | sshPublicKey     | ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC8Fk93z/DLVBj4gHUw3+LOhaIAwCmmXHSfCOlD9Pa1NUTDgURf32m//tRBSDn6o9BTsaHkXyOdTYUF6mXxfwdHaGx3bfXDnUQEX/1J88x0LL6p+sigrGc9/2OUZtL5Af4lNPgbUl1U15U2hhh/Nv9URObSPIbAxURIIArrfYMgDNcUoA/BA4dxnk2lc9Mc/Fozkx7N7bNVT1GOAtosR5Y+ukdTwJFzKmrH6hBAzRKVIxfa4XT+cOmOYW4kL/ca/owHQURxqI4VMKcLEkEYdwANRt1/HJL5kJkpDPQF2gmrH+XNs46E3zicMIzEzKa53gks9hiyRt/AT7UMwXbmSbGv hermes@pc |
 | sshPublicKey     | ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDOajx6+YcZCdu97aJiC0cIoOkk63kp8mv3ZAOrC0m0g6kibiPmCVmo/ITegtu58boy0CMpmwD/thk36FFdy4Ig5ZNMCRv+9m6PtIE06pvUB6rtYfgzwMc+G3Wibs/zsb7XUwl6Cl/JtsYyeXpdlzIgSt7SzrWf+BVQxOAtJD7bjLXtvQhjHbBO21Zh/Xp0kKlMWlzhSSs5AEjUY0jRAXMPkXPzf8dqhd6JKpdxvk1fjc14BWISZqgeiLpUUL+hk+md5SB31NEKtTkx6nQ5QbXe9BSwu0CtxjAq1vaHwL3bLNL7NFArrltIfOh0BDSADOVfMJ6nSnRgv4uk50gnUr2F hermes@laptop |
+| sshPublicKey     | ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBH+EtG8OXSsgX9sRldi86H0lBEY/vZAeejxHxDjG1rF+SYF7piCA4C6vLmLKAYz6aWueK0QNvMVlR7SOXESnXEs= hermes@server |
 
 Private key `hermes@pc`:
 ```

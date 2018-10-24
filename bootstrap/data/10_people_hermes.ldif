@@ -27,3 +27,6 @@ sshPublicKey: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDOajx6+YcZCdu97aJiC0cIo
  tvQhjHbBO21Zh/Xp0kKlMWlzhSSs5AEjUY0jRAXMPkXPzf8dqhd6JKpdxvk1fjc14BWISZqgeiL
  pUUL+hk+md5SB31NEKtTkx6nQ5QbXe9BSwu0CtxjAq1vaHwL3bLNL7NFArrltIfOh0BDSADOVfM
  J6nSnRgv4uk50gnUr2F hermes@laptop
+sshPublicKey: ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdH
+ AyNTYAAABBBH+EtG8OXSsgX9sRldi86H0lBEY/vZAeejxHxDjG1rF+SYF7piCA4C6vLmLKAYz6a
+ WueK0QNvMVlR7SOXESnXEs= hermes@server
